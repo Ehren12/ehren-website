@@ -3,9 +3,12 @@ import AstroPWA from '@vite-pwa/astro'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    AstroPWA({
-      /* your pwa options */
-    })
-  ]
+    integrations: [
+        AstroPWA({
+            devOptions: {
+                enabled: true
+                /* other options */
+            }
+        })
+    ]
 })

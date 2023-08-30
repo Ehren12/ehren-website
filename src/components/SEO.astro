@@ -1,0 +1,33 @@
+---
+interface Props {
+    title?: string;
+    description: string;
+}
+
+const { title = "Ehren!", description }: Props = Astro.props as Props;
+// const canonUrl = new URL(Astro.url.pathname, Astro.site);
+---
+
+<title>{title}</title>
+<!-- <link rel="canonical" href={canonUrl} /> -->
+<meta name="description" content={description} />
+
+<meta property="og:title" content={title} />
+<meta property="og:site_name" content="Ehren Nwokocha" />
+<!-- <meta property="og:url" content={canonUrl} /> -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:descripton" content={description} />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+<meta name="twitter:site" content="@EhrenNwokocha" />
+<meta name="twitter:creator" content="@EhrenNwokocha" />
+
+<meta
+    name="keywords"
+    content="ehren,nwokocha,ehren nwokocha,portfolio,website,developer,about,contact,me,cv,resume,nonso,chinonso,engineering,design"
+/>
+<link rel="icon" href="/ehren-rect.png" />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
