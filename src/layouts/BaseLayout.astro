@@ -1,13 +1,15 @@
 ---
 import SEO from "../components/SEO.astro";
-import '@fontsource/raleway'
+import Navigation from "../components/Navigation.astro";
+import '@fontsource-variable/hanken-grotesk';
+import "../styles/globals.css"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-		<meta name="viewport" content="width=device-width" />
+		<meta name='viewport' content='width=device-width, initial-scale=1' />
 		<!-- <meta name="generator" content={Astro.generator} /> -->
 		<SEO title="Home | Ehren" description="Hi there, I&apos;m Ehren Nwokocha! I&apos;m usually having fun with my computer, listening to music or occasionally playing the violin. Currently, I&apos;m a member of HackClub." />
 		<style>
@@ -15,20 +17,36 @@ import '@fontsource/raleway'
 				padding: 0;
 				margin: 0;
 				box-sizing: border-box;
+				font-family: 'Hanken Grotesk Variable';
 			}
 			main {
 				width: 100%;
 				height: 100vh;
 				display: flex;
-				justify-content: center;
+				flex-direction: column;
 				align-items: center;
-				font-family: 'Raleway';
+				column-count: 1;
+			}
+
+			.main_content {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex: 1;
+				align-items: center;
+				padding-top: 80px;
+				/* justify-content: center; */
+				flex-direction: column;
+				text-align: left;
 			}
 		</style>
 	</head>
 	<body>
         <main>
-		    <slot />
+			<Navigation />
+			<div class="main_content">
+				<slot />
+			</div>    
         </main>
 	</body>
 </html>
