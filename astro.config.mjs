@@ -1,14 +1,8 @@
-import { defineConfig } from 'astro/config'
-import AstroPWA from '@vite-pwa/astro'
+import { defineConfig } from 'astro/config';
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [
-        AstroPWA({
-            devOptions: {
-                enabled: true
-                /* other options */
-            }
-        })
-    ]
-})
+  integrations: [mdx()]
+});

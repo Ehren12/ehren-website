@@ -1,6 +1,6 @@
 ---
 import SEO from "../components/SEO.astro";
-import { pwaInfo } from 'virtual:pwa-info';
+import '@fontsource/raleway'
 ---
 
 <html lang="en">
@@ -10,7 +10,21 @@ import { pwaInfo } from 'virtual:pwa-info';
 		<meta name="viewport" content="width=device-width" />
 		<!-- <meta name="generator" content={Astro.generator} /> -->
 		<SEO title="Home | Ehren" description="Hi there, I&apos;m Ehren Nwokocha! I&apos;m usually having fun with my computer, listening to music or occasionally playing the violin. Currently, I&apos;m a member of HackClub." />
-        { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			main {
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: 'Raleway';
+			}
+		</style>
 	</head>
 	<body>
         <main>

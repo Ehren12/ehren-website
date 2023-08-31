@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.0.0",
+    "@fontsource/raleway": "^5.0.8",
+    "@fontsource/rubik": "^5.0.11",
     "astro": "^3.0.3"
-  },
-  "devDependencies": {
-    "@vite-pwa/astro": "^0.1.1"
   }
 }
