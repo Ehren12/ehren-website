@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/ehren-rect.png";
+import "../styles/navigation.css"
 ---
 
 <nav class="navigation_bar">
@@ -14,25 +15,3 @@ import logo from "../assets/ehren-rect.png";
         class={"navigation_image"}
     />
 </nav>
-
-<style>
-    .navigation_bar {
-        padding: 60px 0px 0px 0px;
-        width: 70%;
-        display: flex;
-        align-items: left;
-        /* justify-content: center; */
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .navigation_image {
-        border-radius: 10px;
-    }
-
-    @media only screen and (max-width: 390px;) {
-        .navigation_bar {
-            background-color: red;
-        }
-    }
-</style>
