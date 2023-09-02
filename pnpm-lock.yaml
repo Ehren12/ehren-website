@@ -32,12 +32,18 @@ dependencies:
   autoprefixer:
     specifier: ^10.4.15
     version: 10.4.15(postcss@8.4.29)
+  contactjs:
+    specifier: ^2.1.7
+    version: 2.1.7
   css-doodle:
     specifier: ^0.35.1
     version: 0.35.1
   cssnano:
     specifier: ^6.0.1
     version: 6.0.1(postcss@8.4.29)
+  hammerjs:
+    specifier: ^2.0.8
+    version: 2.0.8
   postcss-nesting:
     specifier: ^12.0.1
     version: 12.0.1(postcss@8.4.29)
@@ -47,6 +53,9 @@ dependencies:
   react-dom:
     specifier: ^18.0.0
     version: 18.2.0(react@18.2.0)
+  zingtouch:
+    specifier: ^1.0.6
+    version: 1.0.6
 
 packages:
 
@@ -1438,6 +1447,10 @@ packages:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
     dev: false
 
+  /contactjs@2.1.7:
+    resolution: {integrity: sha512-o95EUKewmXx+ZoODL1jf6K1yQSvADhyG8BIFyUK7TWc4ToF5MBhb4glVB3aKFJWgXbYyAnrGkbgzATCJSmE9Mg==}
+    dev: false
+
   /convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: false
@@ -1970,6 +1983,11 @@ packages:
       kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
+    dev: false
+
+  /hammerjs@2.0.8:
+    resolution: {integrity: sha512-tSQXBXS/MWQOn/RKckawJ61vvsDpCom87JgxiYdGwHdOa0ht0vzUWDlfioofFCRU0L+6NGDt6XzbgoJvZkMeRQ==}
+    engines: {node: '>=0.8.0'}
     dev: false
 
   /has-flag@3.0.0:
@@ -4364,6 +4382,10 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: false
+
+  /zingtouch@1.0.6:
+    resolution: {integrity: sha512-S7jcR7cSRy28VmQBO0Tq7ZJV4pzfvvrTU9FrrL0K1QPpfBal9wm0oKhoCuifc+PPCq+hQMTJr5E9XKUQDm00VA==}
     dev: false
 
   /zod@3.21.1:

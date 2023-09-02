@@ -1,10 +1,32 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import styles from "../styles/globals.css";
+import "../styles/home.css";
+import "../styles/globals.css";
+
+import { Image } from "astro:assets";
+import logo from "../assets/ehren-rect.png";
 
 const pageTitle: string = "Home";
 ---
 
 <BaseLayout title={pageTitle}>
-    
+    <script src="../script/animate.js"></script>
+    <div class="text-container">
+        <Image
+            width="60"
+            height="60"
+            src={logo}
+            alt="The capital letters E, in navy blue, and the letter N, in purple, on a yellow background."
+            loading={"lazy"}
+            quality={100}
+            class={"logo"}
+        />
+        <p id="job-text">Software Developer</p>
+        <div class="text-wrapper">
+            <h1 class="big-text" draggable="true">
+                Hi there 👋 I&rsquo;m Ehren and I&rsquo;m a software developer
+                🧑&zwj;💻
+            </h1>
+        </div>
+    </div>
 </BaseLayout>

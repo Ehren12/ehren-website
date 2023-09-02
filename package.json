@@ -19,10 +19,13 @@
     "@types/react-dom": "^18.0.6",
     "astro": "^3.0.3",
     "autoprefixer": "^10.4.15",
+    "contactjs": "^2.1.7",
     "css-doodle": "^0.35.1",
     "cssnano": "^6.0.1",
+    "hammerjs": "^2.0.8",
     "postcss-nesting": "^12.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "zingtouch": "^1.0.6"
   }
 }

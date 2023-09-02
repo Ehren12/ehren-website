@@ -4,8 +4,9 @@
     display: flex;
     flex: 1;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 75px;
     /* justify-content: center; */
     flex-direction: column;
-    text-align: left;
+    overflow: hidden;
+    /* text-align: left; */
 }
