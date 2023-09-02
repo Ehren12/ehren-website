@@ -6,11 +6,11 @@ import "../styles/globals.css";
 import { Image } from "astro:assets";
 import logo from "../assets/ehren-rect.png";
 
-const pageTitle: string = "Home";
+const pageTitle: string = "About";
 ---
 
 <BaseLayout title={pageTitle}>
-    <script src="../script/animate.js"></script>
+    <!-- <script src="../script/animate.js"></script> -->
     <div class="text-container">
         <!-- <Image
             width="60"
@@ -21,15 +21,15 @@ const pageTitle: string = "Home";
             quality={100}
             class={"logo draggable"}
         /> -->
-        <p id="job-text" class="draggable">Software Developer</p>
+        <!-- <p id="job-text" class="draggable">Software Developer</p> -->
         <div class="text-wrapper">
             <h1 class="big-text draggable">
-                Hi 👋 I&rsquo;m Ehren and welcome to my corner of the internet 🌐
+                I love to write code with love 💖
             </h1>
         </div>
-        <p>Press the start button below to start exporing!</p>
+        <!-- <p>Press the start button below to start exporing!</p> -->
     </div>
-    <div class="start-container">
-        <a href="/about/">Explore!</a>
-    </div>
+    <!-- <div class="start-container">
+        <a href="#start">Explore!</a>
+    </div> -->
 </BaseLayout>

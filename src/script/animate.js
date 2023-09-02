@@ -2,8 +2,8 @@ import "hammerjs";
 // import ZingTouch from "zingtouch";
 
 // var zt = new ZingTouch.Region(document.body);
-let textElement = document.querySelector("*");
-
+let textElement = document.querySelector("big-text");
+console.log(textElement)
 // zt.bind(textElement, 'tap', handlerEvent, false);
 
 let hammer = new Hammer(textElement);
@@ -19,6 +19,10 @@ let lastPosX = 0;
 let lastPosY = 0;
 let isDragging = false;
 
+// textElement.addEventListener('mousedown', (e) => {
+//     console.log(e);
+// })
+
 function handlerEvent(event) {
     let currentElement = event.target;
     let left = currentElement.offsetLeft;
@@ -30,9 +34,13 @@ function handlerEvent(event) {
         lastPosX = currentElement.offsetLeft;
         lastPosY = currentElement.offsetTop;
     }
-
     let newPosX = event.deltaX + lastPosX;
     let newPosY = event.deltaY + lastPosY;
+
+    // console.table({
+    //     "x": newPosX,
+    //     "y": newPosY
+    // })
 
     if (newPosX < 0)
     {
@@ -42,6 +50,5 @@ function handlerEvent(event) {
     {
         newPosY = -300;
     }
-    currentElement.style.left = newPosX + "px";
-    currentElement.style.top = newPosY + "px";
+    currentElement.style.setProperty('transform', 'translate(' + newPosX + 'px, ' + newPosY + 'px)');
 }
