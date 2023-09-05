@@ -6,6 +6,12 @@ let textElement = document.querySelector("big-text");
 console.log(textElement)
 // zt.bind(textElement, 'tap', handlerEvent, false);
 
+let toggle = document.querySelector("#non-inter-toggle");
+
+toggle.addEventListener('click', () => {
+    window.location.replace("/non-interactive/")
+})
+
 let hammer = new Hammer(textElement);
 
 hammer.add(new Hammer.Pan({
