@@ -1,0 +1,64 @@
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 25px 0px 25px;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+
+    & #job-text {
+        background-color: rgb(72, 72, 255);
+        font-size: large;
+        width: fit-content;
+        padding: 7px 12px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid black;
+    }
+
+    & .big-text {
+        font-size: 2.8em;
+        transition: ease-in-out;
+
+        & .job {
+            text-decoration:rgb(55, 55, 196) ;
+        }
+    }
+
+    & .logo {
+        border-radius: 10px;
+    }
+
+
+}
+
+.start-container {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    padding: 50px;
+    padding-bottom: 30px;
+    justify-content: center;
+
+    & a {
+        --background: rgb(72, 72, 255);
+        --background-dark: rgb(55, 55, 196);
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+        text-decoration: none;
+        background-color: var(--background);
+        box-shadow: 0px 7px 0 var(--background-dark);
+    }
+
+    & a:active {
+        transform: translateY(2px);
+        box-shadow: 0px 5px 0 var(--background-dark);
+    }
+}
