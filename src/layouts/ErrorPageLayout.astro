@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Giph from "../components/Giph.astro";
+
+// import commingSoonGiph from "../assets/comming-soon.webp";
+
+import "../styles/globals.css";
+
+// interface Props {
+//     pageTitle: string;
+//     giphURL: string | ImageMetadata;
+//     giphAlt: string;
+//     errorMsg: string;
+// }
+
+const {pageTitle, giphURL, giphAlt, errorMsg, frontmatter} = Astro.props;
+console.log(giphURL)
+---
+
+<!-- 2D World -->
+<BaseLayout title={pageTitle || frontmatter.title}>
+    <p style="font-weight: 600;">{errorMsg}</p>
+    <Giph url={giphURL} alt={giphAlt} />
+</BaseLayout>

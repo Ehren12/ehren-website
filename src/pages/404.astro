@@ -1,0 +1,17 @@
+---
+import ErrorPageLayout from "../layouts/ErrorPageLayout.astro";
+import notFound from "../assets/404.webp";
+
+const pageTitle: string = "404 Not Found";
+---
+
+<!-- 2D World -->
+<ErrorPageLayout
+    pageTitle={pageTitle}
+    ,
+    giphURL={notFound}
+    ,
+    giphAlt="'404 Page Not Found' Giph via Giphy"
+    ,
+    errorMsg="You don&rsquo;t seem to be in a known dimension 😱"
+/>

@@ -1,7 +1,7 @@
 
-let non_inter_toggle = document.querySelector("#non-inter-toggle");
+let non_inter_toggle: HTMLInputElement | null = document.querySelector("#non-inter-toggle");
 
-non_inter_toggle.addEventListener('click', () => {
+non_inter_toggle?.addEventListener('click', () => {
     window.location.replace("/non-interactive/")
 })
 

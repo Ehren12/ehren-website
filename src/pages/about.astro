@@ -1,17 +1,17 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Giph from "../components/Giph.astro";
-
+import ErrorPageLayout from "../layouts/ErrorPageLayout.astro";
 import commingSoonGiph from "../assets/comming-soon.webp";
-
-import "../styles/about.css";
-import "../styles/globals.css";
 
 const pageTitle: string = "2D World";
 ---
 
 <!-- 2D World -->
-<BaseLayout title={pageTitle}>
-    <p style="font-weight: 600;">2D World Comming Soon 🧑‍🌾</p>
-    <Giph url={commingSoonGiph} alt="'Comming Soon' Giph via Giphy" />
-</BaseLayout>
+<ErrorPageLayout
+    pageTitle={pageTitle}
+    ,
+    giphURL={commingSoonGiph}
+    ,
+    giphAlt="'Comming Soon' Giph via Giphy"
+    ,
+    errorMsg="2D World Comming Soon 🧑‍🌾"
+/>
