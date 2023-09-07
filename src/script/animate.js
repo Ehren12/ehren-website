@@ -1,60 +1,52 @@
-import "hammerjs";
-// import ZingTouch from "zingtouch";
 
-// var zt = new ZingTouch.Region(document.body);
-let textElement = document.querySelector("big-text");
-console.log(textElement)
-// zt.bind(textElement, 'tap', handlerEvent, false);
+let non_inter_toggle = document.querySelector("#non-inter-toggle");
 
-let toggle = document.querySelector("#non-inter-toggle");
-
-toggle.addEventListener('click', () => {
+non_inter_toggle.addEventListener('click', () => {
     window.location.replace("/non-interactive/")
 })
 
-let hammer = new Hammer(textElement);
 
-hammer.add(new Hammer.Pan({
-    direction: Hammer.DIRECTION_ALL,
-    threshold: 0
-}));
 
-hammer.on('pan', handlerEvent);
+/* Addition of Interactivity Later in Website using hammer.js */
 
-let lastPosX = 0;
-let lastPosY = 0;
-let isDragging = false;
+// import "hammerjs";
 
-// textElement.addEventListener('mousedown', (e) => {
-//     console.log(e);
-// })
+// let textElement = document.querySelector("big-text");
 
-function handlerEvent(event) {
-    let currentElement = event.target;
-    let left = currentElement.offsetLeft;
-    if (currentElement.offsetLeft < 24) {
-        left += (24 - left);
-    }
-    if (!isDragging) {
-        isDragging = true;
-        lastPosX = currentElement.offsetLeft;
-        lastPosY = currentElement.offsetTop;
-    }
-    let newPosX = event.deltaX + lastPosX;
-    let newPosY = event.deltaY + lastPosY;
+// let hammer = new Hammer(textElement);
 
-    // console.table({
-    //     "x": newPosX,
-    //     "y": newPosY
-    // })
+// hammer.add(new Hammer.Pan({
+//     direction: Hammer.DIRECTION_ALL,
+//     threshold: 0
+// }));
 
-    if (newPosX < 0)
-    {
-        newPosX = 0;
-    }
-    else if (newPosY < -300)
-    {
-        newPosY = -300;
-    }
-    currentElement.style.setProperty('transform', 'translate(' + newPosX + 'px, ' + newPosY + 'px)');
-}
+// hammer.on('pan', handlerEvent);
+
+// let lastPosX = 0;
+// let lastPosY = 0;
+// let isDragging = false;
+
+// function handlerEvent(event) {
+//     let currentElement = event.target;
+//     let left = currentElement.offsetLeft;
+//     if (currentElement.offsetLeft < 24) {
+//         left += (24 - left);
+//     }
+//     if (!isDragging) {
+//         isDragging = true;
+//         lastPosX = currentElement.offsetLeft;
+//         lastPosY = currentElement.offsetTop;
+//     }
+//     let newPosX = event.deltaX + lastPosX;
+//     let newPosY = event.deltaY + lastPosY;
+
+//     if (newPosX < 0)
+//     {
+//         newPosX = 0;
+//     }
+//     else if (newPosY < -300)
+//     {
+//         newPosY = -300;
+//     }
+//     currentElement.style.setProperty('transform', 'translate(' + newPosX + 'px, ' + newPosY + 'px)');
+// }

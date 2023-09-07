@@ -1,4 +1,6 @@
-.text-container {
+/* CSS for index.astro page */
+
+.container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -7,11 +9,14 @@
     width: 100%;
     justify-content: center;
 
-    & #job-text {
+    & #location-text {
+        text-align: center;
         background-color: rgb(72, 72, 255);
         font-size: large;
+        font-weight: 600;
         width: fit-content;
-        padding: 7px 12px;
+        padding: 7px 10px;
+        padding-left: 13px;
         border-radius: 20px;
         color: #fff;
         border: 1px solid black;

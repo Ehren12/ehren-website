@@ -2,16 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/home.css";
 import "../styles/globals.css";
-
-import { Image } from "astro:assets";
-import logo from "../assets/ehren-rect.png";
+// import { Image } from "astro:assets";
+// import logo from "../assets/ehren-rect.png";
 
 const pageTitle: string = "Home";
 ---
 
+<!-- HOME Page (Interactive) -->
 <BaseLayout title={pageTitle}>
     <script src="../script/animate.js"></script>
-    <div class="text-container">
+    <div class="container">
         <!-- <Image
             width="60"
             height="60"
@@ -19,19 +19,19 @@ const pageTitle: string = "Home";
             alt="The capital letters E, in navy blue, and the letter N, in purple, on a yellow background."
             loading={"lazy"}
             quality={100}
-            class={"logo draggable"}
+            class={"logo"}
         /> -->
-        <p id="job-text" class="draggable">📍Nigeria </p>
+        <p id="location-text">Nigerian 📍</p>
         <div class="text-wrapper">
-            <h1 class="big-text draggable">
+            <h1 class="big-text">
                 Hi 👋 I&rsquo;m Ehren and welcome to my corner of the internet 🌐
             </h1>
         </div>
         <div style="display: flex; gap: 7px;">
-            <input type="checkbox" name="toggle" id="non-inter-toggle">
+            <input type="checkbox" name="non-inter-toggle" id="non-inter-toggle">
             <span>Toggle non-interactive mode</span>
         </div>
-        <p>Press the start button below to start exporing!</p>
+        <p class="dimmed-p">Press the start button below to start exporing my 2d world!</p>
     </div>
     <div class="start-container">
         <a href="/about/">Explore!</a>

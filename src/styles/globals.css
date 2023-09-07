@@ -1,3 +1,5 @@
+/* Global styles! */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,4 +20,16 @@ main {
 :-webkit-any(article, aside, nav, section) h1 {
     font-size: 2em;
     font-weight: 600;
+}
+
+.dimmed-p {
+    opacity: 50%;
+    font-weight: 600;
+}
+
+.comming-soon-giph {
+    margin-top: 50px;
+    width: 90%;
+    height: max-content;
+    border-radius: 5px;
 }
