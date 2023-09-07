@@ -29,7 +29,8 @@ main {
 
 .comming-soon-giph {
     margin-top: 50px;
-    width: 90%;
+    margin-bottom: 50px;
+    max-width: 90%;
     height: max-content;
     border-radius: 5px;
 }
