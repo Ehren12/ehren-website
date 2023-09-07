@@ -10,7 +10,7 @@ const {url, alt} = Astro.props;
 <Image
     src={url || defaultGiph}
     alt={alt || 'Giph via Giphy'}
-    loading={"eager"}
+    loading={"lazy"}
     quality={"high"}
     class={"comming-soon-giph"}
 />
