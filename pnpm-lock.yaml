@@ -56,6 +56,9 @@ dependencies:
   sharp:
     specifier: ^0.32.5
     version: 0.32.5
+  swup:
+    specifier: ^4.3.4
+    version: 4.3.4
   zingtouch:
     specifier: ^1.0.6
     version: 1.0.6
@@ -1621,6 +1624,12 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: false
 
+  /delegate-it@6.0.1:
+    resolution: {integrity: sha512-ZS2hRm/SaoPzaeWcWyYjzVVF4/PgALZqma9FXsunFt4XQGVAtQ79Vx7v57vNQNaI75Rl12C+x6TkLqHS5PNKLg==}
+    dependencies:
+      typed-query-selector: 2.11.0
+    dev: false
+
   /dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
@@ -3059,6 +3068,11 @@ packages:
       mimic-fn: 4.0.0
     dev: false
 
+  /opencollective-postinstall@2.0.3:
+    resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
+    hasBin: true
+    dev: false
+
   /ora@7.0.1:
     resolution: {integrity: sha512-0TUxTiFJWv+JnjWm4o9yvuskpEJLXTcng8MJuKd+SzAzp2o+OP3HWqNhB4OdJRt1Vsd9/mR0oyaEYlOnL7XIRw==}
     engines: {node: '>=16'}
@@ -4043,6 +4057,15 @@ packages:
       picocolors: 1.0.0
     dev: false
 
+  /swup@4.3.4:
+    resolution: {integrity: sha512-cAdTgS1aNGlwLeqO2nwnTv1aTtH8HvNqWweoNvHanyQon7qMZI3JvZHTxCn42S7K2QjSppEgLdfFL0J7iH0EKw==}
+    requiresBuild: true
+    dependencies:
+      delegate-it: 6.0.1
+      opencollective-postinstall: 2.0.3
+      path-to-regexp: 6.2.1
+    dev: false
+
   /tar-fs@2.1.1:
     resolution: {integrity: sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng==}
     dependencies:
@@ -4124,6 +4147,10 @@ packages:
   /type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
+    dev: false
+
+  /typed-query-selector@2.11.0:
+    resolution: {integrity: sha512-qBs4sfmnLlPOyo2oSdvHbIFHe2CPgU54/1UGfSNceb7LARpIEVxUaeRX0Doje6oKpuySS2stqy90R3YrynR8Kg==}
     dev: false
 
   /ultrahtml@1.4.0:

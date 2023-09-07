@@ -1,4 +1,4 @@
-.text-container {
+.container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -7,47 +7,63 @@
     width: 100%;
     justify-content: center;
 
-    & #job-text {
-        background-color: rgb(72, 72, 255);
-        font-size: large;
-        width: fit-content;
-        padding: 7px 12px;
-        border-radius: 20px;
-        color: #fff;
-        border: 1px solid black;
-    }
-
     & .big-text {
         font-size: 2.8em;
         transition: ease-in-out;
 
         & .job {
-            text-decoration:rgb(55, 55, 196) ;
+            text-decoration: rgb(55, 55, 196) underline;
         }
     }
 
-    & .logo {
-        border-radius: 10px;
+    & .know-more-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+        gap: 10px;
+        height: auto;
+
+        & .know-more {
+            --background: #fff;
+            --background-dark: #e0e0e0;
+            padding: 10px;
+            border-radius: 10px;
+            color: black;
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: none;
+            background-color: var(--background);
+            box-shadow: 0px 7px 0 var(--background-dark);
+        }
+
+        & .know-more:active {
+            transform: translateY(2px);
+            box-shadow: 0px 5px 0 var(--background-dark);
+        }
     }
 
 
 }
 
-.start-container {
+.next-container {
     display: flex;
     width: 100%;
     margin-top: auto;
-    padding: 50px;
+    padding: 20px;
     padding-bottom: 30px;
-    justify-content: center;
+    justify-content: right;
+    align-items: right;
 
     & a {
         --background: rgb(72, 72, 255);
         --background-dark: rgb(55, 55, 196);
         text-align: center;
         display: inline-block;
+        position: sticky;
         padding: 10px;
-        width: 100%;
+        width: 40%;
         border-radius: 10px;
         color: #fff;
         font-size: 30px;
