@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Giph from "../components/Giph.astro";
 import "../styles/home.css";
 import "../styles/globals.css";
 // import { Image } from "astro:assets";
@@ -22,16 +23,18 @@ const pageTitle: string = "Home";
             class={"logo"}
         /> -->
         <p id="location-text">Nigerian 📍</p>
+            
         <div class="text-wrapper">
             <h1 class="big-text">
-                Hi 👋 I&rsquo;m Ehren and welcome to my corner of the internet 🌐
+                Hi I&rsquo;m Ehren 🙋‍♂️
             </h1>
         </div>
+        <p class="dimmed-p">I'm a software developer and this is the entry point to my dimension in the interverse 🔮</p>
+        <p class="dimmed-p">Click the explore button to enter into this dimension. You basically move a character around to explore different things about me 🗺️</p>
         <div style="display: flex; gap: 7px;">
             <input type="checkbox" name="non-inter-toggle" id="non-inter-toggle">
             <span>Toggle non-interactive mode</span>
         </div>
-        <p class="dimmed-p">Press the start button below to start exporing my 2d world!</p>
     </div>
     <div class="start-container">
         <a href="/about/">Explore!</a>

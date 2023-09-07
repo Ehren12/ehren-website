@@ -23,8 +23,9 @@ main {
 }
 
 .dimmed-p {
-    opacity: 50%;
+    opacity: 55%;
     font-weight: 600;
+    font-size: 22px;
 }
 
 .comming-soon-giph {
