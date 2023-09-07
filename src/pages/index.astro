@@ -32,11 +32,11 @@ const pageTitle: string = "Home";
         <p class="dimmed-p">I'm a software developer and this is the entry point to my dimension in the interverse 🔮</p>
         <p class="dimmed-p">Click the explore button to enter into this dimension. You basically move a character around to explore different things about me 🗺️</p>
         <div class="non-inter-cont" style="display: flex; gap: 7px;">
-            <input type="checkbox" name="non-inter-toggle" id="non-inter-toggle">
-            <span>Toggle non-interactive mode</span>
+            <input type="checkbox" name="non-inter-toggle" id="non-inter-toggle" tabindex="0" aria-label="non-interactive-toggle">
+            <label>Toggle non-interactive mode</label>
         </div>
     </div>
     <div class="start-container">
-        <a href="/about/">Explore!</a>
+        <a href="/about/" tabindex="1">Explore!</a>
     </div> 
 </BaseLayout>

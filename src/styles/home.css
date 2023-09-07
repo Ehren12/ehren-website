@@ -80,7 +80,7 @@
             font-size: 26px;
         }
 
-        & .non-inter-cont span {
+        & .non-inter-cont label {
             opacity: 90%;
             font-size: 27px;
         }
@@ -137,7 +137,7 @@
         font-size: 42px;
     }
 
-    .non-inter-cont span {
+    .non-inter-cont label {
         opacity: 90%;
         font-size: 43px;
     }
