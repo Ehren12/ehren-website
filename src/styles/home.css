@@ -23,12 +23,21 @@
     }
 
     & .big-text {
-        font-size: 2.8em;
         transition: ease-in-out;
     }
 
     & .logo {
         border-radius: 10px;
+    }
+
+    & .non-inter-cont span {
+        opacity: 90%;
+    }
+
+    & .dimmed-p {
+        opacity: 55%;
+        font-weight: 600;
+        font-size: 22px;
     }
 
 }
@@ -60,5 +69,98 @@
     & a:active {
         transform: translateY(2px);
         box-shadow: 0px 5px 0 var(--background-dark);
+    }
+}
+
+/* Media QUERIES */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        & .dimmed-p {
+            font-size: 26px;
+        }
+
+        & .non-inter-cont span {
+            opacity: 90%;
+            font-size: 27px;
+        }
+
+        & .non-inter-cont input {
+            width: 20px;
+        }
+    }
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        & .text-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        & .location-text {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .dimmed-p {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .non-inter-cont {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .start-container {
+        justify-content: center;
+        padding-left: 30px;
+
+        & a {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 1281px) {
+
+
+    .dimmed-p {
+        font-size: 42px;
+    }
+
+    .non-inter-cont span {
+        opacity: 90%;
+        font-size: 43px;
+    }
+
+    .non-inter-cont input {
+        width: 30px;
+    }
+
+    .container {
+        gap: 40px;
+
+        & #location-text {
+            font-size: 38px;
+            padding: 14px 20px;
+            /* padding-left: 13px; */
+            border-radius: 50px;
+        }
+    }
+
+    .start-container {
+        & a {
+            padding: 30px;
+            font-size: 50px;
+        }
     }
 }

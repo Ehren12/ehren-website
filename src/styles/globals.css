@@ -15,17 +15,15 @@ main {
     flex-direction: column;
     align-items: center;
     column-count: 1;
+
+    & h1 {
+        font-size: 2.8em;
+    }
 }
 
 :-webkit-any(article, aside, nav, section) h1 {
     font-size: 2em;
     font-weight: 600;
-}
-
-.dimmed-p {
-    opacity: 55%;
-    font-weight: 600;
-    font-size: 22px;
 }
 
 .comming-soon-giph {
@@ -34,4 +32,50 @@ main {
     max-width: 90%;
     height: max-content;
     border-radius: 5px;
+}
+
+
+/* Media QUERIES */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    main {
+        padding: 40px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        padding: 100px;
+
+        & h1 {
+            font-size: 3.5em;
+        }
+    }
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    main {
+        padding: 0px 200px 160px 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        & h1 {
+            font-size: 3.7em;
+        }
+
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    main {
+        padding: 250px;
+
+        & h1 {
+            font-size: 5em;
+        }
+    }
 }
