@@ -1,0 +1,16 @@
+---
+import "../styles/globals.css";
+import defaultGiph from "../assets/stay-tuned.webp";
+
+import { Image } from "astro:assets";
+
+const {url, alt} = Astro.props;
+---
+
+<Image
+    src={url || defaultGiph}
+    alt={alt || 'Giph via Giphy'}
+    loading={"eager"}
+    quality={"high"}
+    class={"comming-soon-giph"}
+/>

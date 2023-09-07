@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Giph from "../components/Giph.astro";
+
+import commingSoonGiph from "../assets/comming-soon.webp";
+
 import "../styles/about.css";
 import "../styles/globals.css";
-
-import { Image } from "astro:assets";
-import giphy from "../assets/200w.webp";
 
 const pageTitle: string = "2D World";
 ---
@@ -12,11 +13,5 @@ const pageTitle: string = "2D World";
 <!-- 2D World -->
 <BaseLayout title={pageTitle}>
     <p style="font-weight: 600;">2D World Comming Soon 🧑‍🌾</p>
-    <Image
-        src={giphy}
-        alt="'Comming Soon' Giph via Giphy"
-        loading={"lazy"}
-        quality={100}
-        class={"comming-soon-giph"}
-    />
+    <Giph url={commingSoonGiph} alt="'Comming Soon' Giph via Giphy" />
 </BaseLayout>

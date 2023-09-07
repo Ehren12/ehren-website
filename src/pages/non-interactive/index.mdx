@@ -1,16 +1,11 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Giph from "../../components/Giph.astro";
 import "../../styles/globals.css";
 
 import { Image } from "astro:assets";
-import giphy from "../../assets/giphy.webp";
+import stayTunedGiph from "../../assets/stay-tuned.webp";
 
 <BaseLayout title="Home">
     Non-Interactive Layout Comming Soon ⚒️
-    <Image
-        src={giphy}
-        alt="'Hang out in Collserola-BCN and stay tuned for updates' Giph via Giphy."
-        loading={"lazy"}
-        quality={100}
-        class={"comming-soon-giph"}
-    />
+    <Giph url={stayTunedGiph} alt="'Hang out in Collserola-BCN and stay tuned for updates' Giph via Giphy."/>
 </BaseLayout>
